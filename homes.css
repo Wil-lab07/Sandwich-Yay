@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #fcf9f4;
+}
+
+/* Navbar */
+navbar#navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  z-index: 100;
+  background-color: transparent;
+  transition: 0.4s;
+}
+navbar#navbar .notification {
+  display: flex;
+  margin-right: 20px;
+}
+navbar#navbar .notification {
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+navbar#navbar .notification a {
+  text-decoration: none;
+  color: white;
+}
+navbar#navbar .notification a:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 0 5px 0 5px;
+  color: red;
+  border-radius: 100px;
+}
+navbar#navbar .userAccount{
+    margin-right: 20px;
+}
+navbar#navbar .userAccount a{
+  text-decoration: none;
+  color: white;
+}
+navbar#navbar .links {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+navbar#navbar .links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+navbar#navbar img.red {
+  position: absolute;
+  width: 100px;
+  left: 20px;
+  display: none;
+  z-index: 100;
+}
+navbar#navbar img.white {
+  position: absolute;
+  width: 100px;
+  left: 20px;
+  display: block;
+  z-index: 100;
+}
+
+navbar#navbar .hamburger {
+  height: 20px;
+  width: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+  cursor: pointer;
+}
+navbar#navbar .hamburger span {
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+/* End of Navbar */
+
+/* Carousel */
+section#carousel img {
+  height: 100vh;
+}
+/* End of Carousel */
+
+/* Navigation Menu */
+
+section#navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+section#navigation .row.mb-4.navigations {
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#navigation .navCard {
+  border-radius: 50px;
+  width: 18em;
+  height: 24em;
+}
+
+section#navigation .navCard.menu {
+  background: url("https://www.meatpoultry.com/ext/resources/MPImages/01-2020/010620/ChickFilASpicyChicken_smaller.jpg?1578320895");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+
+section#navigation .navCard:hover {
+  transform: scale(1.1);
+}
+
+section#navigation .navCard.signIn {
+  background: url("https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Footer%20Images/footer-burger-phone-desktop-new-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 22%;
+  transition: 0.5s;
+}
+
+section#navigation .navCard.aboutUs {
+  background: url("https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/About%20Images/Who%20We%20Are/Closed-Sunday/Closed-Sunday_Who-We-Are_1440_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+
+section#navigation .navCard.TrackOrder {
+  background: url("https://images.squarespace-cdn.com/content/v1/5d1ce4b7d329a40001804392/1563741666719-0GUP1PFQNCZ3LYRDXW7Z/ke17ZwdGBToddI8pDm48kMXRibDYMhUiookWqwUxEZ97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luUmcNM2NMBIHLdYyXL-Jww_XBra4mrrAHD6FMA3bNKOBm5vyMDUBjVQdcIrt03OQ/Delivery.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+
+section#navigation .navCard.logOut {
+  background: url("../UTS/img/logo2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+
+section#navigation .navigations .property-card {
+  border-radius: 50px;
+  height: 24em;
+  background-color: rgba(0, 0, 0, 0.185);
+}
+
+section#navigation .navigations .property-description {
+  padding: 10px;
+  color: white;
+  height: 24em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* End of Navigation Menu */
+
+/* Categories */
+section#categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#categories .title {
+  margin-top: 40px;
+}
+
+section#categories h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+section#categories .categoriesMenu {
+  display: flex;
+  justify-content: center;
+}
+
+section#categories .categoriesMenu .categoryIMG p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section#categories .categoriesMenu img {
+  width: 280px;
+  transition: 0.5s;
+}
+section#categories .categoriesMenu img:hover {
+  padding: 0;
+}
+/* End of Categories */
+
+@media only screen and (max-width: 777px) {
+  /* Navbar */
+  navbar#navbar .hamburger {
+    display: flex;
+  }
+  navbar#navbar .hamburger span {
+    background-color: white;
+  }
+  navbar#navbar .links {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e51636;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+  navbar#navbar .links a {
+    color: white;
+  }
+
+  navbar#navbar .hamburger.slide span {
+    background-color: white;
+  }
+  navbar#navbar .links.slide {
+    transform: translateX(0);
+  }
+  /* End of Navbar */
+
+  /* Carousel */
+  section#carousel img {
+    height: 50vh;
+  }
+  /* End of Carousel */
+
+  /* NavigationMenus */
+  section#navigation .navigations {
+    flex-direction: column;
+  }
+  /* End of NavigationMenus */
+}
+
+@media only screen and (max-width: 376px) {
+  section#navigation .navigations .navCard {
+    width: 250px;
+  }
+  navbar#navbar .session{
+    font-size: 12px;;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  section#navigation .navigations .navCard {
+    width: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 320px){
+    navbar#navbar .session{
+        font-size: 10px;
+    }
+    navbar#navbar .session .notification{
+        margin-right: 0px;
+    }
+}
+

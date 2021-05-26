@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e51636;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 20px 40px;
+  color: white;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+  margin-top: 100px;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 200px;
+  width: 150px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iconsosmed{
+      margin-bottom: 20px;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+
+/* Navbar */
+navbar#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    z-index: 100;
+    background-color: #E51636;
+    transition: 0.4s;
+}
+navbar#navbar .notification{
+    display: flex;
+    margin-right: 20px;
+}
+navbar#navbar .notification{
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+navbar#navbar .notification a{
+    text-decoration: none;
+    color: white;
+}
+navbar#navbar .notification a:nth-child(2){
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0 5px 0 5px;
+    color: red;
+    border-radius: 100px;
+}
+navbar#navbar .userAccount{
+    margin-right: 20px;
+}
+navbar#navbar .userAccount a{
+  text-decoration: none;
+  color: white;
+}
+navbar#navbar .links{
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+navbar#navbar .links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+navbar#navbar img.red{
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    display: none;
+    z-index: 100;
+}
+navbar#navbar img.white{
+    position: absolute;
+    width: 100px;
+    left: 20px;
+    display: block;
+    z-index: 100;
+}
+
+navbar#navbar .hamburger{
+    height: 20px;
+    width: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+    cursor: pointer;
+}
+navbar#navbar .hamburger span{
+    height: 3px;
+    background-color: #E51636;
+    border-radius: 5px;
+}
+/* End of Navbar */
+
+@media only screen and (max-width: 767px){
+    /* Navbar */
+        navbar#navbar .hamburger{
+            display: flex;
+        }
+        navbar#navbar .hamburger span{
+            margin-right: 7px;
+            background-color: white;
+        }
+        navbar#navbar .links{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #E51636;
+            z-index: -1;
+            transform: translateX(100%);
+            transition: 0.5s;
+        }
+        navbar#navbar .links a{
+            color: white;
+        }
+
+        navbar#navbar .hamburger.slide span{
+            background-color: white;
+        }
+        navbar#navbar .links.slide{
+            transform: translateX(0);
+        }
+    /* End of Navbar */
+    }
+
+    @media only screen and (max-width: 376px) {
+       
+        navbar#navbar .session{
+          font-size: 12px;;
+        }
+      }
+      
+      @media only screen and (max-width: 361px) {
+        section#navigation .navigations .navCard {
+          width: 200px;
+        }
+      
+      }
+      
+    @media only screen and (max-width: 321px){
+        
+        navbar#navbar .session{
+            font-size: 10px;
+        }
+        navbar#navbar .session .notification{
+            margin-right: 0px;
+        }
+    
+    }

@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E51636;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+    navbar#navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 70px;
+        z-index: 100;
+        background-color: #E51636;
+        transition: 0.4s;
+    }
+    navbar#navbar .notification{
+        display: flex;
+        margin-right: 20px;
+    }
+    navbar#navbar .notification{
+        width: 70px;
+        display: flex;
+        justify-content: space-around;
+    }
+    navbar#navbar .notification a{
+        text-decoration: none;
+        color: white;
+    }
+    navbar#navbar .notification a:nth-child(2){
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding: 0 5px 0 5px;
+        color: red;
+        border-radius: 100px;
+    }
+    navbar#navbar .userAccount{
+        margin-right: 20px;
+    }
+    navbar#navbar .userAccount a{
+      text-decoration: none;
+      color: white;
+    }
+    navbar#navbar .links{
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+    }
+    navbar#navbar .links a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    navbar#navbar img.red{
+        position: absolute;
+        width: 100px;
+        left: 20px;
+        display: none;
+        z-index: 100;
+    }
+    navbar#navbar img.white{
+        position: absolute;
+        width: 100px;
+        left: 20px;
+        display: block;
+        z-index: 100;
+    }
+
+    navbar#navbar .hamburger{
+        height: 20px;
+        width: 30px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 100;
+        cursor: pointer;
+    }
+    navbar#navbar .hamburger span{
+        height: 3px;
+        background-color: #E51636;
+        border-radius: 5px;
+    }
+/* End of Navbar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Title */
+    section#title{
+        height: 100vh;
+        width: 100%;
+        padding-left:200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section#title h1{
+        font-size: 90px;
+        color: #fcf9f4;
+    }
+
+/* End of Title */
+
+
+
+
+
+
+/* Categories */
+    section#categories{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fcf9f4;
+    }
+
+    section#categories .row.title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+/* End of Categories */
+
+
+
+
+
+
+
+
+
+
+/* Navigation */
+    section#navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    section#navigation .row.navigations{
+        padding: 10px;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section#navigation .navCard{
+        border-radius: 50px;
+        width: 10em;
+        height: 15em;
+    }
+
+    section#navigation .navCard:hover{
+        transform: scale(1.1);
+    }
+
+    section#navigation .navigations .property-card{
+        border-radius: 50px;
+        height: 15em;
+        background-color: rgba(0, 0, 0, 0.208);
+    }
+
+    section#navigation .navigations .property-description{
+        padding: 10px;
+        color: white;
+        height: 15em;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    /* Navigation Picture */
+    section#navigation .navCard.Breakfast{
+        background: url("https://i.insider.com/578937df4321f1480f8b8970?width=1100&format=jpeg&auto=webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 80%;
+        transition: 0.5s;
+    }
+
+    section#navigation .navCard.Entrees{
+        background: url("https://cloudfront-us-east-1.images.arcpublishing.com/gmg/DSMT5I4Z3ZGOBB36KNHBNIBHLE.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 22%;
+        transition: 0.5s;
+    }
+
+    section#navigation .navCard.Salads{
+        background: url("https://dinnerthendessert.com/wp-content/uploads/2018/07/Chick-fil-A-Market-Salad-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.5s;
+    }
+
+    section#navigation .navCard.Sides{
+        background: url("https://i0.wp.com/www.eatthis.com/wp-content/uploads/2019/08/chick-fil-a-mac-and-cheese-grilled-nuggets.jpg?fit=1200%2C879&ssl=1");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.5s;
+    }
+
+    section#navigation .navCard.Treats{
+        background: url("https://pbs.twimg.com/media/Dh9U9R9UEAAB7L9.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.5s;
+    }
+
+    section#navigation .navCard.Drinks{
+        background: url("http://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Stories%20Images/2019/05/passionfruit/header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.5s;
+    }
+/* End of Navigation */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu */
+
+    section#menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+
+    section#menu .col-md.mb-4.mt-4{
+        display: flex;
+        justify-content: center;
+    }
+
+    section#menu .col-md.mb-4.mt-4 .card{
+        border-radius: 20px;
+        transition: 0.5s;
+        background: transparent;
+        border: none;
+    }
+
+    section#menu .col-md.mb-4.mt-4 .card .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    section#menu .col-md.mb-4.mt-4 .card .card-body h2{
+        font-size: 23px;
+    }
+
+    section#menu .col-md.mb-4.mt-4 .card .card-body .integer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section#menu .col-md.mb-4.mt-4 .card .card-body .integer input{
+        border: 1px solid #f8f9fc;
+        height: 40px;
+        border-radius: 8px;
+        background-color: #f8f9fc;
+        color: black;
+    }
+
+    section#menu .col-md.mb-4.mt-4 .card p{
+        font-size: 20px;
+    }
+
+    section#menu .col-md.mb-4.mt-4 .card:hover{
+        transform: scale(1.05);
+        box-shadow: 10px 10px 8px #8888;
+    }
+
+/* End of Menu */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 769px){
+    section#navigation .row.navigations{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    /* Navbar */
+        navbar#navbar .hamburger{
+            display: flex;
+        }
+        navbar#navbar .hamburger span{
+            background-color: white;
+        }
+        navbar#navbar .links{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #E51636;
+            z-index: -1;
+            transform: translateX(100%);
+            transition: 0.5s;
+        }
+        navbar#navbar .links a{
+            color: white;
+        }
+
+        navbar#navbar .hamburger.slide span{
+            background-color: white;
+        }
+        navbar#navbar .links.slide{
+            transform: translateX(0);
+        }
+    /* End of Navbar */
+
+
+
+
+
+
+
+    /* Title */
+
+        section#title{padding-left: 50px;}
+
+        section#title h1{font-size: 50px;}
+
+    /* End of Title */
+
+
+
+
+
+    /* Categories */
+        section#categories .row.mb-4.category{
+            flex-direction: column;
+        }
+    /* End of Categories */
+
+    /* Navigations */
+        /* section#navigation .navigations{
+            flex-direction: column;
+            padding: 0px;
+
+        } */
+
+        section#navigation .row.navigations{
+            padding: 0px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    /* End of Navigations */
+}
+
+@media only screen and (max-width: 376px) {
+    section#navigation .navigations .navCard {
+      width: 250px;
+    }
+    navbar#navbar .session{
+      font-size: 12px;;
+    }
+  }
+  
+  @media only screen and (max-width: 361px) {
+    section#navigation .navigations .navCard {
+      width: 200px;
+    }
+  
+  }
+  
+@media only screen and (max-width: 321px){
+    section#navigation .row.navigations{
+        width: 250px;
+    }
+    navbar#navbar .session{
+        font-size: 10px;
+    }
+    navbar#navbar .session .notification{
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 281px){
+    section#title{padding-left: 30px;}
+
+    section#title h1{font-size: 50px;}
+}
+
+
+
+

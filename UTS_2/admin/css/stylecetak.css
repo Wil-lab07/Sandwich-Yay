@@ -1,0 +1,44 @@
+.header{
+    display: inline-block;
+    
+}
+
+
+.kop{
+    display: flex;
+    justify-content: center; 
+}
+
+h3{
+    margin-top: 40px;
+}
+
+hr{
+    margin-top: 0.8rem;
+    margin-bottom: 1 rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+#datatable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #datatable td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #datatable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #datatable tr:hover {background-color: #ddd;}
+  
+  #datatable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+   
+    background-color: #e41535;
+    color: white;
+  }

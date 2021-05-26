@@ -1,0 +1,17 @@
+.imageorder{
+    width: 200px;
+    height: 200px;
+}
+
+.bgorder{
+    background-color: #e41535;
+}
+
+.buttonlogin{
+    width: 100%;
+}
+
+.bgimage{
+    background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_874536124_404826.jpg");
+    background-size: cover;
+}
